@@ -1,6 +1,4 @@
-# disable_itunes
-I got tired of itunes turning on when I connected my bluetooth headphones so I made a script that renames some files to disable or enable it as I please.
-
-./itunes.sh action password
-- action: on/off
-- password: \<computer-password>
+# What is this?
+I got tired of bluetooth starting up Apple Music. This script just checks whether it is running every 30 seconds and then kills it.
+1. Run `brew install pidof`
+2. Run `nohup ./kill_apple_music.sh > /dev/null 2>&1 &`
